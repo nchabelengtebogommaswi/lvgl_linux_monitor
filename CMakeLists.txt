@@ -42,7 +42,13 @@ separate_arguments(
 add_executable(
         lvgl_linux_monitor
         src/main.cpp
-        src/main.cpp
+        include/ui/IScreen.h
+        include/runtime/LvglRunTime.h
+        src/runtime/LvglRunTime.cpp
+        include/ui/UIManager.h
+        src/ui/UIManager.cpp
+        include/ui/screens/CoordinateScreen.h
+        src/ui/screens/CoordinateScreen.cpp
 )
 
 target_include_directories(
